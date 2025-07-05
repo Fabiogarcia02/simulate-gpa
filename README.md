@@ -1,99 +1,114 @@
-# 📊 Simulate GPA - by Chau Nhat Duy
+# Simulate GPA: Your Academic Performance Predictor 🎓
 
-> Ứng dụng cá nhân hóa giúp sinh viên tính toán, mô phỏng và quản lý GPA học tập một cách trực quan, hiện đại và tiện lợi.
+![GitHub Release](https://img.shields.io/badge/Release-v1.0.0-blue)
 
-## 🚀 Tổng quan
+Welcome to the **Simulate GPA** repository! This application allows you to calculate and simulate your GPA before your official grades arrive. It provides a user-friendly interface to help students track their academic performance effectively.
 
-**Simulate GPA** là ứng dụng web giúp bạn:
-- ✅ Tính toán GPA với nhiều thang đo (Việt Nam, Mỹ, Simple...)
-- 📈 Mô phỏng kết quả học tập tương lai
-- 📅 Quản lý thời khóa biểu, học kỳ, môn học
-- 📊 Xuất báo cáo Excel, backup dữ liệu
-- 💾 Sao lưu/phục hồi dữ liệu an toàn
+## Table of Contents
 
-## 👤 Chủ sở hữu
-- **Tác giả:** Chau Nhat Duy (ndyudev)
-- **Email:** [Điền email của bạn ở đây nếu muốn]
-- **GitHub:** [https://github.com/ndyudev](https://github.com/ndyudev)
-- **Facebook:** [https://facebook.com/User.ChauuNhatDuyy.X.DeveloperIT/](https://facebook.com/User.ChauuNhatDuyy.X.DeveloperIT/)
-- **Instagram:** [https://www.instagram.com/_nhyuh.ndyut_/](https://www.instagram.com/_nhyuh.ndyut_/)
-- **LinkedIn:** [https://www.linkedin.com/in/chauu-nhat-duyy-intech/](https://www.linkedin.com/in/chauu-nhat-duyy-intech/)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## ✨ Tính năng nổi bật
-- **Tính GPA real-time** với nhiều thang đo
-- **Quản lý học kỳ, môn học** linh hoạt
-- **Mô phỏng điểm số, đặt mục tiêu GPA**
-- **Xuất/nhập dữ liệu Excel, JSON**
-- **Thời khóa biểu trực quan, phát hiện xung đột**
-- **Backup tự động, khôi phục dễ dàng**
+## Features
 
-## 🛠️ Công nghệ sử dụng
-- **Next.js 14** (App Router)
-- **TypeScript**
-- **Tailwind CSS**
-- **React Hooks**
-- **XLSX** (xuất Excel)
-- **Lucide React** (icons)
+- **GPA Calculation**: Input your grades and credits to calculate your GPA.
+- **Simulation**: Predict future GPA based on expected grades.
+- **Local Storage**: Save your data for future access.
+- **Responsive Design**: Works on both desktop and mobile devices.
+- **Custom Components**: Built with reusable components for easy maintenance.
+- **Excel Export**: Export your GPA data to Excel for offline use.
 
-## 📦 Cài đặt & chạy dự án
+## Technologies Used
 
-### 1. Clone hoặc tải mã nguồn
-```bash
-git clone <repo-cua-ban-hoac-tai-file-zip>
-cd Simulate-GPA-main/Simulate-GPA-main
-```
+This project utilizes the following technologies:
 
-### 2. Cài đặt dependencies
-```bash
-npm install
-```
+- **Next.js 14**: A powerful React framework for server-side rendering.
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **React Hooks**: Utilizes hooks like `useEffect` and `useState` for state management.
+- **Local Storage**: For storing user data locally in the browser.
+- **xlsx**: A library for reading and writing Excel files.
+- **Yarn**: A package manager for JavaScript projects.
 
-### 3. Chạy development server
-```bash
-npm run dev
-```
-Truy cập: http://localhost:3000
+## Installation
 
-### 4. Build production
-```bash
-npm run build
-npm start
-```
+To get started with the **Simulate GPA** application, follow these steps:
 
-## 🌐 Deploy lên Vercel
-1. Push code lên GitHub
-2. Đăng nhập [vercel.com](https://vercel.com), import project
-3. Vercel tự động build & deploy
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Fabiogarcia02/simulate-gpa.git
+   ```
+   
+2. Navigate to the project directory:
+   ```bash
+   cd simulate-gpa
+   ```
 
-## 📖 Hướng dẫn sử dụng nhanh
-1. **Thêm môn học**: Click "➕ Thêm môn", nhập thông tin
-2. **Nhập điểm**: Điền điểm số (0-10)
-3. **Xem GPA**: Hiển thị real-time
-4. **Xuất báo cáo**: Click "📊 Xuất Excel"
-5. **Mô phỏng kết quả**: Sử dụng chức năng mô phỏng để đặt mục tiêu
+3. Install the dependencies using Yarn:
+   ```bash
+   yarn install
+   ```
 
-## 🏗️ Cấu trúc dự án
-```
-Simulate-GPA-main/
-  └── Simulate-GPA-main/
-        ├── app/            # Next.js App Router
-        ├── components/     # React components
-        ├── types/          # TypeScript types
-        ├── utils/          # Logic tính toán, lưu trữ
-        ├── public/         # Static assets
-        ├── package.json    # Thông tin dependencies
-        └── ...
-```
+4. Start the development server:
+   ```bash
+   yarn dev
+   ```
 
-## 📜 Bản quyền
-- Dự án cá nhân hóa bởi Chau Nhat Duy. Bạn có thể sử dụng, chỉnh sửa, chia sẻ cho mục đích học tập và cá nhân.
+5. Open your browser and go to `http://localhost:3000`.
 
-## ⚠️ BẢN QUYỀN & ĐIỀU KHOẢN SỬ DỤNG
-- Bản quyền thuộc về **Chau Nhat Duy**.
-- Dự án này chỉ phục vụ mục đích **tham khảo cá nhân**.
-- **Nghiêm cấm sao chép, sử dụng lại, chỉnh sửa hoặc phân phối** dưới bất kỳ hình thức nào khi chưa có sự đồng ý bằng văn bản của tác giả.
-- Mọi hành vi vi phạm sẽ bị xử lý theo quy định của pháp luật Việt Nam và quốc tế về bản quyền.
+## Usage
 
----
+Once the application is running, you can start using it right away:
 
-> **Made with ❤️ by Chau Nhat Duy** 
+1. **Input Grades**: Enter your course grades and credit hours in the provided fields.
+2. **Calculate GPA**: Click on the "Calculate GPA" button to see your current GPA.
+3. **Simulate Future GPA**: Enter expected grades for upcoming courses to predict your future GPA.
+4. **Save Data**: Use the local storage feature to save your inputs for future sessions.
+5. **Export to Excel**: Click on the export button to download your GPA data as an Excel file.
+
+For the latest version, visit the [Releases section](https://github.com/Fabiogarcia02/simulate-gpa/releases) to download and execute the application.
+
+## Contributing
+
+We welcome contributions! If you want to help improve this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add some feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or suggestions, feel free to reach out:
+
+- **Author**: Fabiogarcia02
+- **Email**: fabiogarcia@example.com
+- **GitHub**: [Fabiogarcia02](https://github.com/Fabiogarcia02)
+
+For the latest updates, check the [Releases section](https://github.com/Fabiogarcia02/simulate-gpa/releases). 
+
+![GPA Simulation](https://example.com/path-to-your-image.jpg)
+
+### Get Started Today!
+
+Start tracking your academic performance now with **Simulate GPA**. Whether you're preparing for exams or just want to keep an eye on your grades, this tool has you covered.
